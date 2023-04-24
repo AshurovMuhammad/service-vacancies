@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="wrap">
+        {% for obj in object_list %}
+            <div class="element">
+                <p class="header">{{ obj.title }}</p>
+                <h4 class="company">{{ obj.company }}</h4>
+                <p class="body">{{ obj.description|linebreaksbr }}</p>
+                <p class="footer">{{ obj.city.name }} | {{ obj.language.name }} | {{ obj.timestamp }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
