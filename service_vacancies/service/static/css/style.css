@@ -41,3 +41,28 @@ body{
     font-weight: bold;
     font-size: 14px;
 }
+
+.start{
+    background: #e7e7e7;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 60%;
+    margin: 40px auto;
+}
+
+.form-control{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.btn{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}

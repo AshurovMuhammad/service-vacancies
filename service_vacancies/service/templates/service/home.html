@@ -5,6 +5,12 @@
 {% block content %}
 <div class="content">
     <div class="wrap">
+        <form action="{% url 'home' %}" class="start" method="get">
+            {{ form.as_p }}
+            <p>
+                <input type="submit" value="Qidirish" class="btn">
+            </p>
+        </form>
         {% for obj in object_list %}
             <div class="element">
                 <p class="header">{{ obj.title }}</p>
@@ -13,6 +19,7 @@
                 <p class="footer">{{ obj.city.name }} | {{ obj.language.name }} | {{ obj.timestamp }}</p>
             </div>
         {% endfor %}
+
     </div>
 </div>
 {% endblock %}
