@@ -11,6 +11,18 @@
                 <input type="submit" value="Qidirish" class="btn">
             </p>
         </form>
+
+
+    {% if object_list %}
+    <div class="wrap">
+        <div>
+            <form action="{% url 'home' %}">
+                <input type="search" class="search" name="search" placeholder="Qidirish...">
+            </form>
+        </div>
+    </div>
+    {% endif %}
+
         {% for obj in object_list %}
             <div class="element">
                 <p class="header">{{ obj.title }}</p>
